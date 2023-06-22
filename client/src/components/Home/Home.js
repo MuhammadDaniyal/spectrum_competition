@@ -3,6 +3,8 @@ import Main from '../Main/Main'
 import Layout from '../../Layout'
 import Services from '../OurServices/Services'
 import Choose from '../ChooseUs/Choose'
+import Mission from "../Mission/Mission"
+import Footer from '../Footer/Footer'
 const Home = () => {
     return (
         <>
@@ -10,6 +12,8 @@ const Home = () => {
                 <Main />
                 <Services/>
                 <Choose/>
+                <Mission></Mission>
+                <Footer></Footer>
             </Layout>
         </>
     )
