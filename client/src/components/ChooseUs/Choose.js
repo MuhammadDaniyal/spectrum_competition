@@ -32,7 +32,7 @@ const Choose = () => {
 
 
                 
-                <h1>Why Choose Us</h1>
+                <h1 style={{fontSize:'50px',color:'#6054fc'}} >Why Choose Us</h1>
 
             {/* <div className="event-page-card-main"> */}
             <div style={{display:'flex',gap:'20px'}}>
