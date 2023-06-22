@@ -1,4 +1,5 @@
 /* ----------------------- header Style ---------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;200;300;400;500;600;700&family=Carter+One&family=Comfortaa:wght@300;400;500;600;700&family=Dancing+Script:wght@500&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Open+Sans:wght@300;400;500&family=Pacifico&family=Poppins:wght@400;500;600;700;800&family=Quicksand:wght@300;400;500;600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Shrikhand&family=Source+Sans+Pro:wght@300&family=Square+Peg&family=Ubuntu:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600&display=swap");
 
 header {
   height: 8rem;
@@ -14,6 +15,12 @@ header {
 .logo {
   height: 25px;
   width: 194px;
+}
+
+.nav-heading {
+  font-size: 3.7rem !important;
+  font-family: "Pacifico", cursive !important;
+  color: #182334 !important;
 }
 
 /* ----------------------- Navbar Style ---------------------------- */
@@ -148,7 +155,7 @@ header {
   width: 100%;
   height: 2.3px;
   border-radius: 4px;
-  background-color: #fff;
+  background-color: #182334;
   bottom: -4px;
   left: 0;
   transform-origin: right;
@@ -162,10 +169,10 @@ header {
 }
 
 .my-nav-btn {
-  color: #f9bc6e;
-  border: 1px solid #f9bc6e;
-  background: #fff;
-  border-radius: 20px;
+  color: #fff;
+  border: none;
+  background: #6054fc;
+  border-radius: 10px;
   padding: 10px 25px;
   outline: none;
   font-size: 1.5rem;
@@ -175,6 +182,7 @@ header {
 
 .my-nav-btn:hover {
   border: none;
-  background: #f9bc6e;
-  color: #fff;
+  border: 1px solid #6054fc;
+  background: #fff;
+  color: #6054fc;
 }

@@ -13,11 +13,7 @@ const Navbar = () => {
                     <ul className="navbar-lists">
                         <li>
                             <NavLink to='/' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Services</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Industries</NavLink>
+                                onClick={() => { setActiveMenu(false) }}>Home</NavLink>
                         </li>
                         <li>
                             <NavLink to='/' className='navbar-link home-link'
@@ -25,10 +21,14 @@ const Navbar = () => {
                         </li>
                         <li>
                             <NavLink to='/' className='navbar-link home-link'
-                                onClick={() => { setActiveMenu(false) }}>Team</NavLink>
+                                onClick={() => { setActiveMenu(false) }}>Features</NavLink>
                         </li>
                         <li>
                             <NavLink to='/' className='navbar-link home-link'
+                                onClick={() => { setActiveMenu(false) }}>Services</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/' className=' home-link'
                                 onClick={() => { setActiveMenu(false) }}>
                                 <button className='my-nav-btn'>Contact Us</button>
                             </NavLink>
