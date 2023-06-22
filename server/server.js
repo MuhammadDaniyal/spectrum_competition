@@ -1,10 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-// const connect = require('./db/connect')
-// const router = require('./router/route')
+const connect = require('./db/connect')
+const router = require('./router/route')
 const app = express();
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 8080;
 
 /** middleware */
 app.use(express.json())
@@ -14,7 +14,7 @@ app.use(morgan('tiny'))
 app.disable('x-powered-by') // less hackers know wabout our stacks
 
 /** API Routes */
-// app.use('/api', router)
+app.use('/api', router)
 
 /** http get request */
 app.get('/', (req, res) => {
@@ -27,17 +27,17 @@ app.listen(port, () => {
     console.log(`App listening on port ${port}`)
 })
 
-// connect().then(() => {
-//     try {
-//         app.listen(port, () => {
-//             console.log(`App listening on port ${port}`)
-//         })
-//     } catch (error) {
-//         console.log("Cannot connect with server");
-//     }
-// }).catch((error) => {
-//     console.log("Database not connected",error);
-// })
+connect().then(() => {
+    try {
+        app.listen(port, () => {
+            console.log(`App listening on port ${port}`)
+        })
+    } catch (error) {
+        console.log("Cannot connect with server");
+    }
+}).catch((error) => {
+    console.log("Database not connected", error);
+})
 
 
 /** morgan library is used to log all the http request inside the console */
